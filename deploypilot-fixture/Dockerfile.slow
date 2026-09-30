@@ -1,7 +1,0 @@
-FROM node:22-alpine
-RUN node -e "setTimeout(() => {}, 120000)"
-WORKDIR /app
-COPY server.mjs .
-USER node
-EXPOSE 3000
-CMD ["node", "server.mjs"]
